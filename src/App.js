@@ -52,12 +52,13 @@ class App extends React.Component {
             <div className="container">
               <div className="row">
 
-                <div className="col-5 title-container">
+                <div className="col-4 title-container">
                   <Titles />
                 </div>
 
-                <div className="col-7 form-container">
+                <div className="col-8 form-container">
                   <Form getWeather={this.getWeather} />
+                  <br />
                   <Weather
                     temperature={this.state.temperature}
                     humidity={this.state.humidity}
